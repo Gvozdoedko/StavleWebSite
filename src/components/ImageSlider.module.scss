@@ -1,0 +1,56 @@
+// ImageSlider.module.scss
+
+.sliderSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; // Вы можете настроить это значение в зависимости от вашего дизайна
+}
+
+.infoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    // Если вам нужны дополнительные стили для этого раздела, добавьте их здесь
+}
+
+.description {
+    flex: 1;
+    padding-right: 20px; // Измените отступы в соответствии с вашим макетом
+
+    // Добавьте стили для описания, такие как размер шрифта, цвет и т.д.
+}
+
+.mainImage {
+    flex: 1;
+
+    img {
+        width: 100%; // Изображение будет занимать всю доступную ширину
+        object-fit: contain; // Чтобы сохранить пропорции изображения
+    }
+}
+
+.carouselWrapper {
+    width: 70%; // Измените это в соответствии с желаемой шириной
+    margin-top: 20px; // Отступ между верхним разделом и каруселью
+
+    // Ваши стили для карусели (если требуется)
+}
+
+.ant-carousel .slick-slide {
+    border: none; // Убедитесь, что границ нет
+    padding: 0; // Удалите внутренние отступы
+
+    img {
+        max-width: 100%;
+        display: block; // Это устраняет любой потенциальный пространство под изображением
+        border: none; // Убедитесь, что у изображений нет границ
+        margin: auto; // Дополнительное выравнивание, если потребуется
+        object-fit: cover; // Это будет поддерживать пропорции изображения
+    }
+}
